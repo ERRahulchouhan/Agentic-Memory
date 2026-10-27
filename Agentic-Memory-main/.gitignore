@@ -1,0 +1,32 @@
+# --- Virtual environments ---
+amenenv/
+venv/
+.venv/
+env/
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# --- Secrets: never commit your Groq API key ---
+.env
+.streamlit/secrets.toml
+
+# --- Local caches (fastembed model downloads, HF tokenizer cache) ---
+.cache/
+*.onnx
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Claude Code session metadata (not part of the project) ---
+.claude/
+
+# --- Reference-only material, not part of the app ---
+notebooks for ref/
+ref_diagrams.py
